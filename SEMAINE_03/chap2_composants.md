@@ -442,9 +442,7 @@ Faites deux composants : App et Favorite.
 
 Vous devez utiliser l'approche fonctionnelle de React. Pour la gestion de la logique algorithmique et pour la mise à jour des données vous pouvez utiliser :
 
-- Soit un useReducer avec le context API de React
-
-- Soit un Redux
+- Redux
 
 Voyez les wireframes ci-dessous.
 
