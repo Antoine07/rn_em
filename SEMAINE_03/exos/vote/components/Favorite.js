@@ -12,7 +12,9 @@ import { styles, items } from '../Styles';
 import { set_reset } from '../store/action-types/actions-types';
 
 export default function Favorite() {
-    const { choices } = useSelector(state => state);
+    const { choices } = useSelector(state => ({
+        choices : state.v.choices
+    }));
     const dispatch = useDispatch();
 
     const renderItem = ({ item, index }) => (

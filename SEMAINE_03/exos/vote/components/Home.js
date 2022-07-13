@@ -6,9 +6,12 @@ import Favorite from './Favorite';
 import { styles, items } from '../Styles';
 import { set_choice } from '../store/action-types/actions-types';
 
-
 export default function Home() {
-    const { candidates, max, count } = useSelector(state => state);
+    const { candidates, max, count } = useSelector(state => ({
+        candidates : state.v.candidates,
+        max : state.v.max,
+        count : state.v.count,
+    }));
     const dispatch = useDispatch();
     // condition pour afficher le résultat du vote 
     if (count >= max)
